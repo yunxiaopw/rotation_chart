@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.banner {
+  width: 100%;
+
+}
+.content {
+  width: 600px;
+  height: 225px;
+  margin: 20px auto;
+  position: relative;
+}
+#item {
+  width: 100%;
+  height: 100%;
+}
+.item {
+  position: absolute;
+  opacity: 0;
+  transform: all 1s;
+}
+.item.active {
+  opacity: 1;
+}
+#btn-left {
+  width: 41px;
+  height: 69px;
+  background: url(../img/icon-slides.png) no-repeat -84px 50%;
+  z-index: 99;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+#btn-left:hover{
+  background-position: 0 50%;
+}
+#btn-right {
+  width: 41px;
+  height: 69px;
+  background: url(../img/icon-slides.png) no-repeat -125px 50%;
+  z-index: 99;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+#btn-right:hover{
+  background-position: -42px 50%;
+}
+#point {
+  height: 20px;
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+}
+.point {
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  background: rgba(0,0,0,.4);
+  border-color: hsla(0, 1%, 64%, .3);
+  overflow: hidden;
+  cursor: pointer;
+  margin: 5px;
+}
+.point:hover {
+  background-color: hsla(0,0%,100%,.4);
+  border-color: rgba(0,0,0,.4);
+}
+.point.active {
+  background-color: hsla(0,0%,100%,.4);
+  border-color: rgba(0,0,0,.4);
+}
+img {
+  width: 100%;
+}
